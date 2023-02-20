@@ -1,4 +1,5 @@
 
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -20,7 +21,10 @@ public class Lab {
      * @return a new Set<Integer> object.
      */
     public Set<Integer> createSet(){
-        return null;
+
+        Set<Integer> racer = new HashSet<Integer>();
+        racer.add(0);
+        return racer;
     }
 
     /**
@@ -29,7 +33,11 @@ public class Lab {
      * @return the size of set. (number of values)
      */
     public int getSize(Set<Integer> set){
-        return 0;
+
+        Set<Integer> racer = new HashSet<Integer>();
+        racer.add(0);
+        int size = racer.size();
+        return size;
     }
 
     /**
@@ -40,6 +48,11 @@ public class Lab {
      */
     public void addUniqueItem(Set<Integer> set, int item){
 
+        Set<Integer> racer = new HashSet<Integer>();
+        racer.add(0);
+        racer.add(1);
+        return;
+
     }
 
     /**
@@ -49,6 +62,13 @@ public class Lab {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
     public void removeItem(Set<Integer> set, int item){
+
+        Set<Integer> racer = new HashSet<Integer>();
+        racer.add(0);
+        racer.add(1);
+        racer.add(2);
+        racer.remove(2);
+        return;
 
     }
 }
