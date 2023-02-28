@@ -1,6 +1,7 @@
-
 import java.util.HashSet;
 import java.util.Set;
+
+import javafx.css.Size;
 
 /**
  * Sets are unordered collections of elements. Sets do not allow duplicates.
@@ -22,22 +23,18 @@ public class Lab {
      */
     public Set<Integer> createSet(){
 
-        Set<Integer> racer = new HashSet<Integer>();
+        HashSet<Integer> racer = new HashSet<Integer>();
         racer.add(0);
         return racer;
     }
-
+    //Need to fix!!
     /**
      * Return the size of a set.
      * @param set The set that we will be manipulating.
      * @return the size of set. (number of values)
      */
     public int getSize(Set<Integer> set){
-
-        Set<Integer> racer = new HashSet<Integer>();
-        racer.add(0);
-        int size = racer.size();
-        return size;
+        return set.size();
     }
 
     /**
@@ -47,10 +44,7 @@ public class Lab {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
     public void addUniqueItem(Set<Integer> set, int item){
-
-        Set<Integer> racer = new HashSet<Integer>();
-        racer.add(0);
-        racer.add(1);
+        set.add(item);
         return;
 
     }
@@ -62,12 +56,7 @@ public class Lab {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
     public void removeItem(Set<Integer> set, int item){
-
-        Set<Integer> racer = new HashSet<Integer>();
-        racer.add(0);
-        racer.add(1);
-        racer.add(2);
-        racer.remove(2);
+        set.remove(item);
         return;
 
     }
