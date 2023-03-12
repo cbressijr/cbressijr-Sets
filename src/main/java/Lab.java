@@ -23,9 +23,8 @@ public class Lab {
      */
     public Set<Integer> createSet(){
 
-        HashSet<Integer> racer = new HashSet<Integer>();
-        racer.add(0);
-        return racer;
+        HashSet<Integer> set = new HashSet<Integer>();
+        return set;
     }
     //Need to fix!!
     /**
